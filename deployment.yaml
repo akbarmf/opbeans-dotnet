@@ -4,7 +4,7 @@ metadata:
   name: sample-dotnet
   namespace: dev
   labels:
-    app: sample-dotnet
+    app: sample-dotnet-linux-app
 spec:
   replicas: 1
   selector:
