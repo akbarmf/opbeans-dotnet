@@ -4,16 +4,14 @@ metadata:
   name: sample-dotnet
   namespace: dev
   labels:
-    app: sample-dotnet-linux-app
+    app: sample-dotnet
 spec:
   replicas: 1
   selector:
-    matchLabels:
-      app: sample-dotnet-linux-app
+    app: sample-dotnet
   template:
     metadata:
-      labels:
-        app: sample-dotnet-linux-app
+    spec:
       containers:
       - name: nginx
         image: 504572139667.dkr.ecr.ap-southeast-1.amazonaws.com/dev:latest
