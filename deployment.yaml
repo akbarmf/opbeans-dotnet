@@ -14,10 +14,10 @@ spec:
         run: sample-dotnet
     spec:
       containers:
-      - name: nginx
+      - name: sample-dotnet
         image: 504572139667.dkr.ecr.ap-southeast-1.amazonaws.com/dev:latest
         ports:
-        - name: http
+        - name: sample-dotnet
           containerPort: 80
         imagePullPolicy: IfNotPresent
       nodeSelector:
